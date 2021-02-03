@@ -1,0 +1,22 @@
+@url = http://localhost:3000/api/blog
+
+GET {{url}}/2
+
+###
+POST {{url}}
+Content-Type: application/json
+{
+    "postId" : 1,
+    "title" : "My second post",
+    "content" : "Welcome to my blog, this is my second post"
+}
+
+###
+POST {{url}}
+Content-Type: application/json
+{
+    "postId" : 4,
+    "title" : "My fourth post",
+    "content" : "Welcome to my blog, this is my fourth post",
+    "imgPath" : "https://www.abprojeyonetimi.com/wp-content/uploads/2019/04/blog.jpg"
+}
